@@ -11,8 +11,7 @@ services:
       - "host.docker.internal:host-gateway"
   http:
     image: "caddy"
-    restart:
-      - unless-stopped
+    restart: unless-stopped
     networks:
       - external
       - internal
@@ -28,8 +27,7 @@ services:
       - "host.docker.internal:host-gateway"
   app:
     image: "ollama/ollama"
-    restart:
-      - unless-stopped
+    restart: unless-stopped
     networks:
       - internal
     environment:
@@ -47,8 +45,7 @@ services:
       - ./ollama/app:/root/.ollama:z
   webui:
     image: "ghcr.io/open-webui/open-webui:main"
-    restart:
-      - unless-stopped
+    restart: unless-stopped
     links:
       - app
     networks:
