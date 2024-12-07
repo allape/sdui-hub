@@ -150,6 +150,8 @@ docker compose -f compose.easyocr.yaml up -d
 
 - [easyocr](https://github.com/JaidedAI/EasyOCR)
 
+- [ShowUI](https://github.com/showlab/ShowUI)
+
 - [notification.mp3](https://github.com/pythongosssss/ComfyUI-Custom-Scripts/blob/main/web/js/assets/notify.mp3)
 
 - and more...
